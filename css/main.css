@@ -38,6 +38,7 @@
 @import url("fonts.css");
 @import url("font-awesome/css/font-awesome.min.css");
 @import url("micons/micons.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,300,500,700");
 
 
 /** 
@@ -49,10 +50,10 @@
 
 
 :root {
-	--color-primary: #4fe668;
-	--color-secondary: #06a328;
+	--color-primary: #47b293;
+	--color-secondary: #12a179;
 	--color-tertiary: #39c779;
-	--color-titulos: #06a328;
+	--color-titulos: #00d397;
 	--hover: #06a328;
 }
 html {
@@ -80,7 +81,8 @@ html, body {
 }
 body {
 	background: #151515;
-	font-family: "lora-regular", serif;
+	/*font-family: "lora-regular", serif;*/
+	font-family: "Roboto", sans-serif;
 	font-size: 1.7rem;
 	line-height: 3rem;
 	color: #6e6e6e;
@@ -110,7 +112,7 @@ a:hover, a:focus, a:active {
  * ------------------------------------------------------------------- 
  */
 h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
-	font-family: "poppins-semibold", sans-serif;
+	font-family: "Roboto", sans-serif;
 	color: #313131;
 	font-style: normal;
 	text-rendering: optimizeLegibility;
@@ -162,8 +164,8 @@ p img {
 	margin: 0;
 }
 p.lead {
-	font-family: "lora-regular", serif;
-	font-size: 2rem;
+	font-family: "Roboto", serif;
+	font-size: 1.7rem;
 	line-height: 1.8;
 	color: #888888;
 }
@@ -977,18 +979,39 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	height: 100%;
 }
 .skill-bars li .progress span {
+	display: none !important;
 	position: absolute;
-	right: 0;
+	width: fit-content;
+	left: 80%;
+	text-align: center;
 	top: -3.6rem;
 	display: block;
 	font-family: "poppins-regular", sans-serif;
-	color: white;
+	color: rgb(0, 0, 0);
 	font-size: 1.1rem;
 	line-height: 1;
-	background: #313131;
+	background: #c5c5c5;
 	padding: .6rem .6rem;
 	border-radius: 3px;
 }
+.skill-bars li .progress .spanEnd {
+	position: absolute;
+	width: 80px;
+	left: 100%;
+	text-align: center;
+	top: -3.6rem;
+	display: block;
+	font-family: "poppins-regular", sans-serif;
+	color: rgb(0, 0, 0);
+	font-size: 1.1rem;
+	line-height: 1;
+	background: #c5c5c5;
+	padding: .6rem .6rem;
+	border-radius: 3px;
+}
+
+
+
 .skill-bars li .progress span::after {
 	position: absolute;
 	left: 50%;
@@ -2301,7 +2324,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #stats {
-	background: #990047;
+	background: var(--hover);
 	padding-top: 7.2rem;
 	padding-bottom: 6rem;
 	text-align: center;
@@ -2611,7 +2634,8 @@ header .logo a {
 footer {
 	padding-bottom: 3rem;
 	font-size: 1.4rem;
-	font-family: "poppins-regular", sans-serif;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
 }
 footer a, footer a:visited {
 	color: #FFFFFF;
