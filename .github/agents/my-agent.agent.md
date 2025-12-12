@@ -4,8 +4,10 @@
 # To make this agent available, merge this file into the default repository branch.
 # For format details, see: https://gh.io/customagents/config
 
-name:
-description:
+name: Obsidian Data Science Agent
+description: >
+  Agent for creating and organizing technical notes in Obsidian for data science work
+  in the Government of São Paulo, with support for LGPD, LAI, SQL, Power BI, and related technologies
 ---
 
 # My Agent
